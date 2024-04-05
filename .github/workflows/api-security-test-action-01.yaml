@@ -1,0 +1,21 @@
+name: "APIsec|SCAN - Dynamic API Security Testing - Test 01"
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: ["main"]
+
+jobs:
+  test_scan:
+    permissions:
+      contents: read # to checkout repository code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: APISec|SCAN Testing
+        uses: turnitin-actions/free-API-security-test-action@main
+        with:
+          base_url: "https://bridge.qa-examsoft.com/api/"
+          specification_path: "bridge_qa_openapi_spec.json"
+          apisecu_token: ${{ secrets.APISECU_TOKEN }}
