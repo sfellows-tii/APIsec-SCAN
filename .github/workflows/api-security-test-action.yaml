@@ -1,4 +1,4 @@
-name: "APIsec|SCAN - Dynamic API Security Testing"
+name: "APIsec|SCAN - Dynamic API Security Testing - OWASP crAPI"
 
 on:
   workflow_dispatch:
