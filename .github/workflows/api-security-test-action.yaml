@@ -18,3 +18,4 @@ jobs:
         with:
           base_url: "http://crapi.apisec.ai"
           specification_path: "crapi_spec.json"
+          apisecu_token: ${{ secrets.APISECU_TOKEN }}
