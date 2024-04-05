@@ -17,4 +17,4 @@ jobs:
         uses: turnitin-actions/free-API-security-test-action@main
         with:
           base_url: "http://crapi.apisec.ai"
-          specification_path: "https://gist.githubusercontent.com/ManuelBerrueta/11923a4a4210a828706ff51f19633a72/raw/c3999b1d7750d2fbf7c931d9a29dfab0e0c7c2bb/crapi_spec.json"
+          specification_path: "crapi_spec.json"
