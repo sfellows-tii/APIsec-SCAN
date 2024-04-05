@@ -14,7 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: APISec|SCAN Testing
-        uses: apisec-university/free-API-security-test-action@beta
+        uses: turnitin-actions/free-API-security-test-action@main
         with:
-          base_url: "<your-base-url-goes-here>"
-          specification_path: "<your-openapi-specification-file-goes-here>"
+          base_url: "http://crapi.apisec.ai"
+          specification_path: "https://gist.github.com/ManuelBerrueta/11923a4a4210a828706ff51f19633a72.js"
