@@ -1,0 +1,20 @@
+name: "APIsec|SCAN - Dynamic API Security Testing"
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: ["main"]
+
+jobs:
+  test_scan:
+    permissions:
+      contents: read # to checkout repository code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: APISec|SCAN Testing
+        uses: apisec-university/free-API-security-test-action@beta
+        with:
+          base_url: "<your-base-url-goes-here>"
+          specification_path: "<your-openapi-specification-file-goes-here>"
